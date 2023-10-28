@@ -1,7 +1,7 @@
 #+title: dorico-console
 
 #+begin_comment
-$$ Last modified:  18:57:56 Sat Oct 28 2023 CEST
+$$ Last modified:  19:20:05 Sat Oct 28 2023 CEST
 #+end_comment
 
 [[file:dorico-console.gif]]
@@ -38,3 +38,4 @@ Scripts can be created via Dorico's Macro functionality. The scripts contained
 in the ~scripts~ directory serve as examples. Please note that some might not
 work "out of the box" as they depend on custom symbols.  
 
+For more information on the nomenclature refer to [[file:syntax.org][Syntax]].
