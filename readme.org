@@ -1,7 +1,7 @@
 #+title: dorico-console
 
 #+begin_comment
-$$ Last modified:  18:33:03 Sat Oct 28 2023 CEST
+$$ Last modified:  18:33:36 Sat Oct 28 2023 CEST
 #+end_comment
 
 [[file:dorico-console.gif]]
@@ -23,10 +23,10 @@ Microsoft Windows.
 
 1) Install the ~dorico-console.workflow~ program by double clicking the file or
    opening it with ~Automator.app~ and saving it at a custom location. N.B.:
-   Usually, Services are stored in ~~/Library/Services/~.
+   Usually, Services are stored in ~​~/Library/Services/~.
 2) Move all predefined Dorico-/Lua-Scripts from the ~scripts~ directory to the
    location Dorico stores scripts on your system (this is
-   ~~/Library/Application Support/Steinberg/Dorico 5/Script Plug-ins~ by
+   ~​~/Library/Application Support/Steinberg/Dorico 5/Script Plug-ins~ by
    default).
 3) Assign a custom keyboard shortcut (e.g. cmd-!) to the ~dorico-console~
    Service via ~System
