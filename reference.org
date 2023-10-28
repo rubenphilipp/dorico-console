@@ -1,0 +1,63 @@
+#+title: dorico-console reference
+
+#+begin_comment
+$$ Last modified:  23:43:48 Sat Oct 28 2023 CEST
+#+end_comment
+
+* Introduction
+
+This short document describes the "syntax" or, rather, nomenclature of the
+scripts used in /dorico-console/. As the console does not implement a scripting
+language but rather serves as an interface for calling pre-defined scripts (i.e.
+Dorico-/Lua-Macros), the following is not a guide to a scripting or programming
+language but should be perceived as an aid to developing a nomenclature for
+storing your own scripts and as a guide to the pre-defined scripts contained
+in the ~scripts~ directory.
+
+** Structure
+
+The "syntax" of the scripts contained in this project draws some inspiration
+from shell scripting. Thus, each command should stat with a an identifier
+referring to the kind of operation you want to perform or to the module (e.g.
+noteheads) you would like to alter. It is followed by "attributes" and
+"arguments". For example, changing the visibility of a notehead to invisible
+could be done by calling:
+
+#+begin_src
+nh -s nil
+#+end_src
+
+Note that ~true~ and ~false~ are expressed with ~t~ and ~nil~.
+
+*** Nota bene
+
+These are not real scripts but recommendation for syntax which should correspond
+to the names of ~.lua~ scripts. For example, the command above will search for
+a script with the file-name ~nh -s nil.lua~ in the ~Script Plug-ins~ directory.
+
+Thus, all "commands" must be compatible with unix file-names.
+
+
+*** Overview
+
+The following is meant to give a brief overview of the idea of the syntax
+implemented with the default scripts of /dorico-console/. 
+
+
+| command   | description                            | example     |
+|-----------+----------------------------------------+-------------|
+| scale     | alter the size of an object            | scale 50    |
+| n         | refers to notes                        |             |
+| n -lv     | adds/removes laisser-vibrer            | n -lv t     |
+| pb        | changes playback state of objects      | pb nil      |
+| mk        | make (perform a more complex macro)    | mk salt     |
+| nh        | alter the notehead                     | nh x        |
+| nh -s     | alter the visibility of a notehead     | nh -s t     |
+| ns        | refers to note-stems                   |             |
+| ns -s     | alter visibility of stems              | ns -s nil   |
+| txt       | refers to text elements                |             |
+| txt -f    | refers to text frames                  | txt -f rect |
+| txt -f -s | alter visibility of text frames        | txt -f -s t |
+| v         | refers to voices                       |             |
+| v -start  | start a voice with this object (note)? | v -start t  |
+
