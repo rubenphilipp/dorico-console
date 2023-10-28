@@ -1,7 +1,7 @@
 #+title: dorico-console
 
 #+begin_comment
-$$ Last modified:  18:29:37 Sat Oct 28 2023 CEST
+$$ Last modified:  18:30:16 Sat Oct 28 2023 CEST
 #+end_comment
 
 [[file:dorico-console.gif]]
@@ -10,7 +10,7 @@ This tiny project aims at adding very simple "console-like" functionality to
 Steinberg's [[http://dorico.com][Dorico]] notation software. It simply contains a simple Apple
 Automator script which is supposed to be added to Dorico's ~Services~ menu.  The
 program itself launches a pre-recorded/-written Dorico-Macro (i.e. a lua-script
-contained by default in ~~/Library/Application Support/Steinberg/Dorico
+contained by default in ~_~/Library/Application Support/Steinberg/Dorico
 4/Script Plug-ins/~) as entered into the prompt.
 
 ** Compatibility
