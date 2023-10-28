@@ -32,5 +32,10 @@ Microsoft Windows.
    Service via ~System
    Preferences->Keyboard->Shortcuts…->Services->General->dorico-console~.
 
+** Scripts
 
+Scripts can be created via Dorico's Macro functionality. The scripts contained 
+in the ~scripts~ directory serve as examples. Please note that some might not
+work "out of the box" as they depend on custom symbols (e.g. the clb notehead 
+in the example GIF). 
 
